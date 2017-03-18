@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tic-Tac-Toe</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<style>
+		.board img{
+			height:200px;
+			width:200px;
+		}
+	</style>
+</head>
+<body>
+	<h1 class="text-center">Tic-Tac-Toe</h1>
+	<div class="board text-center">
+		<div class="row1" id="row1">
+			<img class="gamePic0" id="gamePic0" name="n" src="./images/gameBackground.jpg" onclick="placeMark(0);">
+			<img class="gamePic1" id="gamePic1" name="n" src="./images/gameBackground.jpg" onclick="placeMark(1);">
+			<img class="gamePic2" id="gamePic2" name="n" src="./images/gameBackground.jpg" onclick="placeMark(2);">
+		</div>
+		<div class="row2" id="row2">
+			<img class="gamePic3" id="gamePic3" name="n" src="./images/gameBackground.jpg" onclick="placeMark(3);">
+			<img class="gamePic4" id="gamePic4" name="n" src="./images/gameBackground.jpg" onclick="placeMark(4);">
+			<img class="gamePic5" id="gamePic5" name="n" src="./images/gameBackground.jpg" onclick="placeMark(5);">
+		</div>
+		<div class="row3" id="row3">
+			<img class="gamePic6" id="gamePic6" name="n" src="./images/gameBackground.jpg" onclick="placeMark(6);">
+			<img class="gamePic7" id="gamePic7" name="n" src="./images/gameBackground.jpg" onclick="placeMark(7);">
+			<img class="gamePic8" id="gamePic8" name="n" src="./images/gameBackground.jpg" onclick="placeMark(8);">
+		</div>
+	</div>
+	<div class="row" style="margin-top:5px;">
+		<div class="col-md-4" id="gameStatus">
+		</div>
+		<div class="col-md-4 text-center">
+			<button class="btn btn-primary" onclick="resetGame();">Reset Game</button>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/ticTacToe.js"></script>
+	<script type="text/javascript"></script>
+</body>
+</html>
